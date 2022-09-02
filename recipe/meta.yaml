@@ -19,7 +19,7 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - dlhub-sdk >=0.10.2
+    - dlhub-sdk >=1.0.0
     - globus-sdk >=3,<4
     - h5py >=2.10.0
     - joblib >=1.0.0
