@@ -1,11 +1,11 @@
-About foundry_ml
-================
+About foundry_ml-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/foundry_ml-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/MLMI2-CSSI/foundry
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/foundry_ml-feedstock/blob/main/LICENSE.txt)
 
 Summary: Package to support simplified application of machine learning models to datasets in materials science
 
