@@ -1,5 +1,5 @@
 {% set name = "foundry_ml" %}
-{% set version = "0.6.3" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/foundry_ml-{{ version }}.tar.gz
-  sha256: d608ce1947b57e7ad2faa4aee1d8be419093392e3985c9e5acde03784f817913
+  sha256: 9f9cce3b9c2d00e56d613dafe7e58b5eaa81c230f01b73bc92ac6b58f8f015af
 
 build:
   noarch: python
