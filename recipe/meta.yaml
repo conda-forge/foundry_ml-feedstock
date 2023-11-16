@@ -11,25 +11,24 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 1
 
 requirements:
   host:
+    - python >=3.7
     - pip
-    - python >=3.6
   run:
-    - dlhub-sdk >=1.0.0
-    - globus-sdk >=3,<4
-    - h5py >=2.10.0
-    - joblib >=1.0.0
-    - json2table
-    - mdf-connect-client >=0.4.0
+    - python >=3.7
     - mdf_forge >=0.8.0
+    - globus-sdk >=3,<4
+    - dlhub-sdk >=1.0.0
     - numpy >=1.15.4
     - pandas >=0.23.4
     - pydantic >=1.4
-    - python >=3.6
+    - mdf-connect-client >=0.4.0
+    - h5py >=2.10.0
+    - json2table
 
 test:
   imports:
