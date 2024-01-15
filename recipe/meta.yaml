@@ -1,5 +1,5 @@
 {% set name = "foundry_ml" %}
-{% set version = "0.7.3" %}
+{% set version = "0.7.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/foundry_ml-{{ version }}.tar.gz
-  sha256: 39080fb98e3bad8477da7c58340b509fc01d5eb6a42efc3001b2a45baed27f1f
+  sha256: 124c70d36a69e7f46ae87160aa37a5e4c141bfe661fa6b1fbfd25cc4479ba7fa
 
 build:
   noarch: python
@@ -25,7 +25,7 @@ requirements:
     - dlhub-sdk >=1.0.0
     - numpy >=1.15.4
     - pandas >=0.23.4
-    - pydantic >=1.4
+    - pydantic <2.0.0
     - mdf-connect-client >=0.4.0
     - h5py >=2.10.0
     - json2table
