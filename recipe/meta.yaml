@@ -1,5 +1,5 @@
 {% set name = "foundry_ml" %}
-{% set version = "0.7.6" %}
+{% set version = "0.7.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/foundry_ml-{{ version }}.tar.gz
-  sha256: d9c4d38318d3435997d0b323b29735d1ec41004477e1d88851f1b25fe4ae64ea
+  sha256: e54056b445c0dde8bdb9563abd838e9984dd2fc95d37460fe815b5cc69eb1d48
 
 build:
   noarch: python
@@ -19,6 +19,7 @@ requirements:
     - python >=3.7
     - pip
   run:
+    - openpyxl
     - python >=3.7
     - mdf_forge >=0.8.0
     - globus-sdk >=3,<4
