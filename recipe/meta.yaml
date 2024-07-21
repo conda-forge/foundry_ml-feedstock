@@ -23,7 +23,7 @@ requirements:
     - python >=3.7
     - mdf_forge >=0.8.0
     - globus-sdk >=3,<4
-    - dlhub-sdk >=1.0.0
+    - dlhub-sdk >=2.1.0
     - numpy >=1.15.4
     - pandas >=0.23.4
     - pydantic >=2.7.2
