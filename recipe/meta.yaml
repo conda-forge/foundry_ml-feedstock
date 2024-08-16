@@ -1,5 +1,5 @@
 {% set name = "foundry_ml" %}
-{% set version = "1.0.2" %}
+{% set version = "1.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/foundry_ml-{{ version }}.tar.gz
-  sha256: 23b83df7b436a194d8d5950c719dd097fec4d52e974df95d5fa22d581e4732d3
+  sha256: 15bdf21ff12f4d35ded45d26fa9c2e3b8949dab965e4cdd389d18467bdbfc158
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
     - python >=3.7
     - mdf_forge >=0.8.0
     - globus-sdk >=3,<4
-    - dlhub-sdk >=2.1.0
+    - dlhub-sdk >=1.0.0
     - numpy >=1.15.4
     - pandas >=0.23.4
     - pydantic >=2.7.2
