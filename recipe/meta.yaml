@@ -1,5 +1,5 @@
 {% set name = "foundry_ml" %}
-{% set version = "1.0.4" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/foundry_ml-{{ version }}.tar.gz
-  sha256: 7e0126c85deb6e0ed5e4f92adbc625e35bfdfc24836aa248c04e40a50a078c39
+  sha256: 6f90f6c2cc91a07f6b793a91b0cd5a886ff2ba060fcda08f7655e39d6a57069a
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -20,17 +20,23 @@ requirements:
     - pip
     - setuptools
   run:
+    - mdf_connect_client >=0.5.0
+    - mdf_toolbox >=0.7.1
+    - requests >=2.31.0
+    - rich >=13.7.0
+    - tqdm >=4.66.0
+    - typer >=0.12.0
     - openpyxl >=3.1.0
     - python >={{ python_min }}
     - mdf_forge >=0.8.0
     - globus-sdk >=3,<4
     - dlhub-sdk >=1.0.0
-    - numpy >=1.15.4
-    - pandas >=0.23.4
+    - numpy >=2.0.0
+    - pandas >=2.2.2
     - pydantic >=2.7.2
     - mdf-connect-client >=0.5.0
-    - h5py >=2.10.0
-    - json2table
+    - h5py >=3.11.0
+    - json2table >=1.1.5
 
 test:
   imports:
